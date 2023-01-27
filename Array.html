@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <script>
+	    //pop
+		var arr=[2,5,4,6];
+		var remove=arr.pop();
+		console.log(remove);
+		console.log(arr);
+		//shift
+		var shif=[2,5,4,6];
+		var array=shif.shift();
+		console.log(array);
+		console.log(shif);
+		//push
+		var add=[3,7,9,10];
+		var pus=add.push(5);
+		console.log(pus);
+		console.log(add);
+		
+		
+		//unshift
+	   var fruits = ["Banana", "Orange", "Apple", "Mango"];
+       fruits.unshift("lemon");
+	   console.log(fruits);
+	   //reduce
+	   var sum=[5,2,6,7];
+	   var value=sum.reduce(function(prev,curr){
+	        return prev+curr;
+			})
+			console.log(value);
+	    //forEach
+		var flowers=["rose","sunflower","bluebell","jasmine"];
+		var nature=flowers.forEach(function(flowers){
+		document.write(nature); 
+		})
+	        
+    </script>
+</body>
+</html>
