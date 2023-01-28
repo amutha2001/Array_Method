@@ -36,11 +36,44 @@
 			})
 			console.log(value);
 	    //forEach
-		var flowers=["rose","sunflower","bluebell","jasmine"];
-		var nature=flowers.forEach(function(flowers){
-		document.write(nature); 
-		})
-	        
+		const chocolate=["milk","Couverture","dark","white","semisweet"];
+			chocolate.forEach(function(chocol,i,array){
+			      console.log(i);
+				   console.log(chocol);
+				    console.log(array);
+			});
+        //splice 
+		let number=[3,6,2,8,7,1,5];
+			number.splice(-2,-3);
+			console.log(number);
+		//sort
+		let flowers=["rose","sunflower","jasmine"];
+		let nature=flowers.sort();
+		console.log(nature);
+		
+		let sortnum1=[1,121,3,123,234];
+		sortnum1.sort(function(a,b){
+		    return a-b;
+			})
+			console.log(sortnum1);
+			
+		let sortnum2=[1,121,3,123,234];
+		sortnum2.sort(function(a,b){
+		    return b-a;
+			})
+			console.log(sortnum2);
+		//join	
+		let joinstr=["dog","fox","deer"];
+		let str=joinstr.join("");
+		console.log(str);
+		//find
+		let findEle=[2,8,12,30,23];
+		var element=findEle.find(function(max){
+		    return max<10;
+			})
+			console.log(element);
+		
+		
     </script>
 </body>
 </html>
